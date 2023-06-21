@@ -6,7 +6,7 @@ use RefactoringGuru\FactoryMethod\Conceptual\ConcreteCreator2;
 
 use PHPUnit\Framework\TestCase;
 
-final class ConceptualTest extends TestCase
+final class FactoryMethodConceptualTest extends TestCase
 {
     /**
      * The client code works with an instance of a concrete creator, albeit through
@@ -24,7 +24,7 @@ final class ConceptualTest extends TestCase
     public function testClientCode(): void
     {
         echo "\n\n";
-        echo "Factory Method -> Conceptual Test";
+        echo "Factory Method Conceptual Test";
         echo "\n\n";
         /**
          * The Application picks a creator's type depending on the configuration or

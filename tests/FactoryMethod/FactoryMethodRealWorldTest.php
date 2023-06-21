@@ -6,7 +6,7 @@ use RefactoringGuru\FactoryMethod\RealWorld\LinkedInPoster;
 
 use PHPUnit\Framework\TestCase;
 
-final class RealWorldTest extends TestCase
+final class FactoryMethodRealWorldTest extends TestCase
 {
     /**
      * The client code can work with any subclass of SocialNetworkPoster since it
@@ -23,7 +23,7 @@ final class RealWorldTest extends TestCase
     public function testClientCode(): void
     {
         echo "\n\n";
-        echo "Factory Method -> Real World Test";
+        echo "Factory Method Real World Test";
         echo "\n\n";
 
         /**

@@ -2,6 +2,7 @@
     "name": "webvelopers/refactoring-guru",
     "autoload": {
         "psr-4": {
+            "RefactoringGuru\\AbstractFactory\\": "RefactoringGuru/AbstractFactory/",
             "RefactoringGuru\\FactoryMethod\\": "RefactoringGuru/FactoryMethod/"
         }
     },
