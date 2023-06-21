@@ -1,10 +1,9 @@
 <?php
 
-namespace RefactoringGuru\AbstractFactory\Conceptual;
+namespace RefactoringGuru\AbstractFactory\Conceptual\Product\B;
 
-/**
- * Concrete Products are created by corresponding Concrete Factories.
- */
+use RefactoringGuru\AbstractFactory\Conceptual\Product\A\AbstractProductA;
+
 class ConcreteProductB2 implements AbstractProductB
 {
     public function usefulFunctionB(): string
@@ -12,11 +11,6 @@ class ConcreteProductB2 implements AbstractProductB
         return "The result of the product B2.";
     }
 
-    /**
-     * The variant, Product B2, is only able to work correctly with the variant,
-     * Product A2. Nevertheless, it accepts any instance of AbstractProductA as
-     * an argument.
-     */
     public function anotherUsefulFunctionB(AbstractProductA $collaborator): string
     {
         $result = $collaborator->usefulFunctionA();

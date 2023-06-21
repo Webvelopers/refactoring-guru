@@ -1,8 +1,8 @@
 <?php
 
-use RefactoringGuru\AbstractFactory\Conceptual\AbstractFactory;
-use RefactoringGuru\AbstractFactory\Conceptual\ConcreteFactory1;
-use RefactoringGuru\AbstractFactory\Conceptual\ConcreteFactory2;
+use RefactoringGuru\AbstractFactory\Conceptual\Factory\AbstractFactory;
+use RefactoringGuru\AbstractFactory\Conceptual\Factory\ConcreteFactory1;
+use RefactoringGuru\AbstractFactory\Conceptual\Factory\ConcreteFactory2;
 
 use PHPUnit\Framework\TestCase;
 
@@ -18,6 +18,7 @@ final class AbstractFactoryConceptualTest extends TestCase
         $productA = $factory->createProductA();
         $productB = $factory->createProductB();
 
+        echo $productA->usefulFunctionA(). "\n";
         echo $productB->usefulFunctionB() . "\n";
         echo $productB->anotherUsefulFunctionB($productA) . "\n";
     }

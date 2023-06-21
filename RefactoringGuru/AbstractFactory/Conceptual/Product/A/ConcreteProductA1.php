@@ -1,10 +1,7 @@
 <?php
 
-namespace RefactoringGuru\AbstractFactory\Conceptual;
+namespace RefactoringGuru\AbstractFactory\Conceptual\Product\A;
 
-/**
- * Concrete Products are created by corresponding Concrete Factories.
- */
 class ConcreteProductA1 implements AbstractProductA
 {
     public function usefulFunctionA(): string
