@@ -1,10 +1,7 @@
 <?php
 
-namespace RefactoringGuru\FactoryMethod\Conceptual;
+namespace RefactoringGuru\FactoryMethod\Conceptual\Product;
 
-/**
- * Concrete Products provide various implementations of the Product interface.
- */
 class ConcreteProduct1 implements Product
 {
     public function operation(): string
