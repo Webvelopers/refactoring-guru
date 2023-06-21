@@ -1,12 +1,7 @@
 <?php
 
-namespace RefactoringGuru\AbstractFactory\RealWorld;
+namespace RefactoringGuru\AbstractFactory\RealWorld\Renderer;
 
-/**
- * The renderer for PHPTemplate templates. Note that this implementation is very
- * basic, if not crude. Using the `eval` function has many security
- * implications, so use it with caution in real projects.
- */
 class PHPTemplateRenderer implements TemplateRenderer
 {
     public function render(string $templateString, array $arguments = []): string

@@ -1,10 +1,7 @@
 <?php
 
-namespace RefactoringGuru\AbstractFactory\RealWorld;
+namespace RefactoringGuru\AbstractFactory\RealWorld\Template;
 
-/**
- * This Concrete Product provides Twig page title templates.
- */
 class TwigTitleTemplate implements TitleTemplate
 {
     public function getTemplateString(): string

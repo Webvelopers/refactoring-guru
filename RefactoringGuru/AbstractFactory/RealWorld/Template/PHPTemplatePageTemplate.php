@@ -1,10 +1,7 @@
 <?php
 
-namespace RefactoringGuru\AbstractFactory\RealWorld;
+namespace RefactoringGuru\AbstractFactory\RealWorld\Template;
 
-/**
- * The PHPTemplate variant of the whole page templates.
- */
 class PHPTemplatePageTemplate extends BasePageTemplate
 {
     public function getTemplateString(): string

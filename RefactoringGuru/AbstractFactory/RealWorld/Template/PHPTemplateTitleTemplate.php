@@ -1,10 +1,7 @@
 <?php
 
-namespace RefactoringGuru\AbstractFactory\RealWorld;
+namespace RefactoringGuru\AbstractFactory\RealWorld\Template;
 
-/**
- * This Concrete Product provides PHPTemplate page title templates.
- */
 class PHPTemplateTitleTemplate implements TitleTemplate
 {
     public function getTemplateString(): string

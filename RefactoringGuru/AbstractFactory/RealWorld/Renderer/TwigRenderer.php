@@ -1,10 +1,7 @@
 <?php
 
-namespace RefactoringGuru\AbstractFactory\RealWorld;
+namespace RefactoringGuru\AbstractFactory\RealWorld\Renderer;
 
-/**
- * The renderer for Twig templates.
- */
 class TwigRenderer implements TemplateRenderer
 {
     public function render(string $templateString, array $arguments = []): string

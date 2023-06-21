@@ -1,9 +1,9 @@
 <?php
 
 use RefactoringGuru\AbstractFactory\RealWorld\Page;
-use RefactoringGuru\AbstractFactory\RealWorld\PHPTemplateFactory;
-use RefactoringGuru\AbstractFactory\RealWorld\TwigTemplateFactory;
-use RefactoringGuru\AbstractFactory\RealWorld\TemplateFactory;
+use RefactoringGuru\AbstractFactory\RealWorld\Factory\PHPTemplateFactory;
+use RefactoringGuru\AbstractFactory\RealWorld\Factory\TwigTemplateFactory;
+use RefactoringGuru\AbstractFactory\RealWorld\Factory\TemplateFactory;
 
 use PHPUnit\Framework\TestCase;
 
@@ -22,7 +22,7 @@ final class AbstractFactoryRealWorldTest extends TestCase
         $page = new Page('Sample page', 'This is the body.');
 
         echo "Testing actual rendering with the PHPTemplate factory:\n";
-        echo $page->render(new PHPTemplateFactory())."\n";
+        echo $page->render(new PHPTemplateFactory()) . "\n";
 
         echo "Testing rendering with the Twig factory:\n";
         echo $page->render(new TwigTemplateFactory());

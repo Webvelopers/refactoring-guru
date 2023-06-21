@@ -1,10 +1,7 @@
 <?php
 
-namespace RefactoringGuru\AbstractFactory\RealWorld;
+namespace RefactoringGuru\AbstractFactory\RealWorld\Template;
 
-/**
- * The Twig variant of the whole page templates.
- */
 class TwigPageTemplate extends BasePageTemplate
 {
     public function getTemplateString(): string
