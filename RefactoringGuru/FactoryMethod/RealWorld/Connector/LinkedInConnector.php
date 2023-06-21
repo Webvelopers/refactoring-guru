@@ -1,10 +1,7 @@
 <?php
 
-namespace RefactoringGuru\FactoryMethod\RealWorld;
+namespace RefactoringGuru\FactoryMethod\RealWorld\Connector;
 
-/**
- * This Concrete Product implements the LinkedIn API.
- */
 class LinkedInConnector implements SocialNetworkConnector
 {
     private $email, $password;

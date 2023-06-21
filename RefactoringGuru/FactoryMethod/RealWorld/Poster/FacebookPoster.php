@@ -1,12 +1,10 @@
 <?php
 
-namespace RefactoringGuru\FactoryMethod\RealWorld;
+namespace RefactoringGuru\FactoryMethod\RealWorld\Poster;
 
-/**
- * This Concrete Creator supports Facebook. Remember that this class also
- * inherits the 'post' method from the parent class. Concrete Creators are the
- * classes that the Client actually uses.
- */
+use RefactoringGuru\FactoryMethod\RealWorld\Connector\FacebookConnector;
+use RefactoringGuru\FactoryMethod\RealWorld\Connector\SocialNetworkConnector;
+
 class FacebookPoster extends SocialNetworkPoster
 {
     private $login, $password;

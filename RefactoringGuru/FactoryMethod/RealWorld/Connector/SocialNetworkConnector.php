@@ -1,10 +1,7 @@
 <?php
 
-namespace RefactoringGuru\FactoryMethod\RealWorld;
+namespace RefactoringGuru\FactoryMethod\RealWorld\Connector;
 
-/**
- * The Product interface declares behaviors of various types of products.
- */
 interface SocialNetworkConnector
 {
     public function logIn(): void;

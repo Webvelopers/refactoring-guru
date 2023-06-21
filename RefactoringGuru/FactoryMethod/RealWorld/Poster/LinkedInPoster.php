@@ -1,10 +1,10 @@
 <?php
 
-namespace RefactoringGuru\FactoryMethod\RealWorld;
+namespace RefactoringGuru\FactoryMethod\RealWorld\Poster;
 
-/**
- * This Concrete Creator supports LinkedIn.
- */
+use RefactoringGuru\FactoryMethod\RealWorld\Connector\LinkedInConnector;
+use RefactoringGuru\FactoryMethod\RealWorld\Connector\SocialNetworkConnector;
+
 class LinkedInPoster extends SocialNetworkPoster
 {
     private $email, $password;
